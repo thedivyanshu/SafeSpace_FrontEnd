@@ -1,0 +1,54 @@
+.auth_page{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.welcomeLogin{
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.socialLogo{
+    font-weight: 700;
+    font-size: 60px;
+    color:#00f3ed;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo > img{
+    width: 100px;
+}
+.auth_page > form > button{
+    background-color:#00f3ed;
+    color: #fff;
+    font-weight: 500;
+}
+
+.auth_page form .pass{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.auth_page form .pass small{
+    position: absolute;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width:780px) {
+    .welcomeLogin{
+        display:none;
+    }
+}

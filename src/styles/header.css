@@ -1,0 +1,113 @@
+.header{
+    width: 100%;
+    min-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    box-shadow: 0 0 10px #ddd;
+    background: #f8f9fa;
+    border:1px solid rgb(0, 0, 0, 0.125);
+}
+
+.header .navbar{
+    width: 100%;
+    height: 100%;
+    background-color: #fff !important;
+}
+
+
+/*-----------------Header Menu--------------*/
+.header .menu .header-nav{
+    filter:grayscale(100%);
+    opacity: 0.7;
+}
+.header .menu .header-nav.active{
+    opacity: 1;
+    filter:grayscale(0);
+}
+.header .menu .material-icons{
+    font-size: 30px;
+}
+.header .menu .dropdown-menu{
+    position: absolute;
+    left:inherit;
+    right:0;
+}
+.header .menu label{
+    cursor: pointer;
+}
+.header .menu .notify_length{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+/*--------------header search bar-------------*/
+
+.header .search_form{
+    position: relative;
+}
+
+.header .search_form #search{
+    background:#00f3ed;
+    border:none;
+    min-width: 300px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    text-indent:36px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.4;
+    
+}
+
+.header .search_form .search_icon{
+    position: absolute;
+    padding: 0 10px;
+    color:rgb(80, 78, 78);
+    pointer-events: none;
+}
+
+.header .search_form .material-icons{
+    font-size: 20px;
+    position:absolute;
+    transform: translate(-10%,-135%);
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.header .search_form .close_search{
+    position: absolute;
+    top:5px;
+    right:10px;
+    font-weight: 700;
+    color: rgb(253, 106, 135);
+    font-size: 22px;
+    cursor: pointer;
+}
+.header .search_form .user{
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+    max-height: calc(100vh - 200px);
+    background: rgb(255, 247, 249);
+    overflow: auto;
+}
+.header .search_form .loading{
+    position: absolute;
+    top: 50%;
+    right:10px;
+    height: 25px;
+    width: 25px;
+    transform: translateY(-50%);
+}
+
+

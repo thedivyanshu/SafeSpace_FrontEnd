@@ -1,0 +1,43 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loading svg{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    animation: text 1s ease-in-out infinite;
+}
+
+@keyframes text{
+    50%{opacity: 0.1;}
+}
+
+.loading .circle1{
+    stroke-dasharray: 22;
+    stroke-dashoffset: 1;
+    animation: dash 4s cubic-bezier(0.455, 0.03, 0.515,0.955)
+        infinite alternate;
+}
+
+.loading .circle2{
+    stroke-dasharray: 50;
+    stroke-dashoffset: 1;
+    animation: dash 2s cubic-bezier(0.455, 0.03, 0.515,0.955)
+        infinite alternate;
+}
+
+.loading .circle3{
+    stroke-dasharray: 35;
+    stroke-dashoffset: 1;
+    animation: dash 3s cubic-bezier(0.455, 0.03, 0.515,0.955)
+        infinite alternate;
+}
+
+@keyframes dash {
+    to{
+        stroke-dashoffset: 234;
+    }
+}
